@@ -1,6 +1,3 @@
-# Tutorial IROS 2018
-IROS 2018 Software Tutorial for XBotControl: refer to https://github.com/ADVRHumanoids/XBotControl for the software infrastructure.
-
 ## Where to start?
 
 First of all you should follow the instruction here: https://github.com/ADVRHumanoids/XBotControl#install to install the latest version of XBotControl on your machine.
