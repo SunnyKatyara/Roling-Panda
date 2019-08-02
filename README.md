@@ -42,6 +42,3 @@ Here it is the lists of the sections and where you will an answer to a set of po
 - How do I find an example of an IK problem solved by OpenSoT whole-body IK engine? -> **opensot** folder
 - How do I use the Cartesian Interface? -> **cartesio** folder
 
-## Notes
-
-Currently the master branch of this repo should not be used with the binary release v1.0.0: please refer to branch v1.0.0 for this.
