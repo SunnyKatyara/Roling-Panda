@@ -1,0 +1,18 @@
+<launch>
+
+  <!-- these arguments you can pass this launch file-->
+  <arg name="namespace" default="/panda"/>
+  <arg name="hardware_interface" default="JointPositionInterface"/>
+  <arg name="controllers" default="panda_arm_controller"/>				   
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find tutorial_iros2018)/configs/panda_control.yaml"  command="load" ns="$(arg namespace)"/>
+
+  <!-- load the controllers -->
+  <node name="panda_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+	output="screen" ns="$(arg namespace)" args="$(arg controllers)" />
+
+    
+
+</launch>
+

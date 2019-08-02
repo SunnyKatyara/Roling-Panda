@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <model name="tree">
+      <static>true</static>
+      <link name="body">
+       <inertial>
+         <mass>1.0</mass>
+         <inertia>
+           <ixx>0.03</ixx> 
+           <ixy>0.0</ixy> 
+           <ixz>0.0</ixz> 
+           <iyy>0.03</iyy> 
+           <iyz>0.0</iyz> 
+           <izz>0.03</izz>
+         </inertia>
+       </inertial>
+        <visual name="visual1">
+         <pose>0 0 0  0 0 0</pose>
+          <geometry>
+           <mesh>
+            <uri>model://tets/meshes/tree.dae</uri>
+            <scale>0.3 0.3 0.3</scale>
+           </mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+</sdf>

@@ -1,0 +1,5 @@
+controller_list:
+  - name: panda/panda_arm_controller
+    action_ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory
+    joints: [lbr_iiwa_joint_1, lbr_iiwa_joint_2, lbr_iiwa_joint_3, lbr_iiwa_joint_4, lbr_iiwa_joint_5, lbr_iiwa_joint_6, lbr_iiwa_joint_7, lbr_iiwa_joint_8, miiwa_joint_x, miiwa_joint_theta]

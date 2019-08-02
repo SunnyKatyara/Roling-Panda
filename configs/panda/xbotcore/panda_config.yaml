@@ -1,0 +1,29 @@
+RobotName: "panda"
+
+GazeboXBotPlugin:
+  control_rate: 0.001
+  gains:
+    panda_joint_1: {p: 1000, d: 10}
+    panda_joint_2: {p: 1000, d: 10}
+    panda_joint_3: {p: 1000, d: 10}
+    panda_joint_4: {p: 1000, d: 10}
+    panda_joint_5: {p: 1000, d: 10}
+    panda_joint_6: {p: 1000, d: 10}
+    panda_joint_7: {p: 1000, d: 10}
+    panda_joint_8: {p: 1000, d: 10}
+    panda_joint_x: {p: 1000, d: 10}
+    panda_joint_y: {p: 1000, d: 10}
+    panda_joint_theta: {p: 1000, d: 10}
+
+HALInterface:
+  lib_file: "libXBotEcat"
+  lib_name: "ETHERCAT"
+  IJoint: "libXBotEcat_Joint"
+  IEndEffectors:
+   - [[19,29] , "libXBotEcat_SoftHand"]
+  ISensors:
+   - [[18,28,147,157], "libXBotEcat_FT"]
+   - [[91], "libXBotEcat_IMU"]
+
+  
+##### OTHER R-HAL SPECIFIC DATA

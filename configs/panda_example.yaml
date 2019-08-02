@@ -1,0 +1,35 @@
+XBotCore:
+  config_path: "configs/panda/xbotcore/panda_config.yaml"
+
+XBotInterface:
+  urdf_path: "robots/panda/panda.urdf"
+  srdf_path: "robots/panda/panda.srdf"
+  joint_map_path: "configs/panda/joint_id_map/panda_joint_map.yaml"
+
+RobotInterface:
+  framework_name: "ROS"
+
+ModelInterface:
+  model_type: "RBDL"
+  is_model_floating_base: "true"
+
+RobotInterfaceROS:
+  publish_tf: true
+  
+MasterCommunicationInterface:
+  framework_name: "ROS"
+
+XBotRTPlugins:
+  plugins: ["SimpleHoming", "simpleIK", "GcompPlugin", "simpleID"]
+  io_plugins: []
+  
+NRTPlugins:
+  plugins: []
+  
+WebServer:
+  enable: "false"
+  address: "127.0.0.1"
+  port: "8081"
+
+SimulationOptions:
+  verbose_mode: "true"

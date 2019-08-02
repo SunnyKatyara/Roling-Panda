@@ -1,0 +1,33 @@
+solver_options:
+    regularization: 1e-6
+    back_end: "qpoases"
+
+stack:
+    - ["Base"]
+    - ["EndEffector"]
+    - ["Camera"]
+    - ["Postural"]
+    
+constraints: ["JointLimits", "VelocityLimits"]
+
+
+################################################
+############### TASK DEFINITIONS ###############
+################################################
+Base:
+    type: "Cartesian"
+    distal_link: "panda_right_mount_link"
+    base_link: "world"
+EndEffector:
+    type: "Cartesian"
+    distal_link: "camera_link"
+    base_link: "world"
+Camera:
+    type: "Cartesian"
+    distal_link: "schunk_pw70_link_mount"
+    base_link: "world" 
+Postural:
+    type: "Postural"
+    lambda: 0.01
+
+
